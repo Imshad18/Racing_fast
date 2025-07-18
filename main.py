@@ -2,13 +2,13 @@ import pygame, sys
 pygame.init()
 
 pygame.display.set_caption('Racing Fast')
-icon = pygame.image.load('files/car.png')
+icon = pygame.image.load('car.png')
 pygame.display.set_icon(icon)
 screen = pygame.display.set_mode((1200, 720))
 clock = pygame.time.Clock()
-og_car_image=pygame.transform.scale(pygame.image.load("files/car.png").convert_alpha(), (100,75))
-track_image=pygame.image.load("files/track.png").convert_alpha()
-cheqeured =pygame.transform.scale(pygame.image.load("files/chequered.PNG").convert_alpha(), (100,75))
+og_car_image=pygame.transform.scale(pygame.image.load("car.png").convert_alpha(), (100,75))
+track_image=pygame.image.load("track.png").convert_alpha()
+cheqeured =pygame.transform.scale(pygame.image.load("chequered.PNG").convert_alpha(), (100,75))
 start_stop = pygame.transform.rotate(cheqeured,90)
 x,y = 100,100
 speed = 5
